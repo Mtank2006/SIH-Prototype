@@ -1,0 +1,27 @@
+# Env & secrets
+.env
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Pipeline artifacts
+data/runs/
+data/inbox/*
+!data/inbox/.gitkeep
+
+# Model weights (auto-downloaded yolov8n.pt; operator-trained pothole .pt stays local)
+*.pt
+
+# Databases
+*.sqlite
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build
+dist/
+*.egg-info/

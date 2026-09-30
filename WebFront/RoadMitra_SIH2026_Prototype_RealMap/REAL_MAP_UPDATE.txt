@@ -1,0 +1,3 @@
+RoadMitra SIH 2026 prototype updated with Leaflet + OpenStreetMap real geographic map.
+Backend remains FastAPI + YOLOv8 + ByteTrack.
+The map requires internet access for OpenStreetMap tiles.

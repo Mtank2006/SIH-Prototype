@@ -1,0 +1,114 @@
+# ==============================================================================
+# RoadMitra / SIH2026 — Git Ignore
+# ==============================================================================
+
+# --- Python & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (local to each machine)
+.venv/
+venv/
+ENV/
+env/
+*/.venv/
+*/*/.venv/
+*/*/*/.venv/
+*/*/*/*/.venv/
+*/*/*/*/*/.venv/
+
+# Testing & Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node / Frontend ---
+node_modules/
+*/node_modules/
+*/*/*/node_modules/
+*/*/*/*/node_modules/
+*/*/*/*/*/node_modules/
+dist/
+*/dist/
+*/*/*/dist/
+*/*/*/*/dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Machine Learning Model Weights ---
+# (GitHub enforces a 100MB limit. Auto-downloaded via scripts/download_models.py)
+*.pt
+*.pth
+*.onnx
+*.bin
+*.weights
+*.h5
+*.safetensors
+*.ckpt
+
+# --- Runtime Data, Video Uploads & Run Evidence ---
+**/data/runs/**
+!**/data/runs/.gitkeep
+**/data/videos/**
+!**/data/videos/.gitkeep
+**/data/evidence/**
+!**/data/evidence/.gitkeep
+**/data/inbox/**
+!**/data/inbox/.gitkeep
+**/data/snapshots/**
+!**/data/snapshots/.gitkeep
+
+# Ignore media files produced during test runs
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# --- Environment & Credentials ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# --- Operating System & Backups ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.upstream.bak
