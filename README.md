@@ -127,34 +127,6 @@ source .venv/bin/activate
 python -m pytest Model/SIH2026-PROTOTYPE/tests/ -x --tb=short
 ```
 
----
+## 6. How to INSTALL 
 
-## 6. Pushing to GitHub (Step-by-Step)
-
-This repository includes a comprehensive `.gitignore` that prevents huge binary files (YOLO weights, `.venv`, `node_modules`, test video files) from bloating the Git history or exceeding GitHub's 100 MB per-file limit.
-
-Follow these steps to initialize and push this project to your GitHub account:
-
-```bash
-# 1. Initialize Git in the project root (if not already initialized)
-git init -b main
-
-# 2. Add all source files (large assets are safely ignored by .gitignore)
-git add .
-
-# 3. Create your first commit
-git commit -m "feat: complete RoadMitra SIH2026 integrated prototype"
-
-# 4. Link your GitHub remote repository
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-
-# 5. Push your code to GitHub
-git push -u origin main
-```
-
----
-
-## 7. License & Credits
-
-Built for the **Smart India Hackathon 2026 (SIH26124)** by Team RoadMitra.
-Licensed under the Apache 2.0 License.
+See INSTALLATION.md and requirements.txt
